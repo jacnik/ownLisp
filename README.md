@@ -3,6 +3,6 @@ Lisp interpreter project build from scratch in C <br />
 
 ## Notes to self:
 
-* compiling a c file with cc and C99 standard:
+* compiling a c file with cc and C99 standard:<br />
 cc -std=c99 -Wall hello_world.c -o hello_world
 
