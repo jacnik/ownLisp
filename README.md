@@ -14,3 +14,6 @@ cc -std=c99 -Wall prompt.c -ledit -o prompt
 * installing editline library for ubuntu: <br />
 sudo apt-get install libedit-dev
 
+* [mpc repository](https://github.com/orangeduck/mpc) <br />
+
+
