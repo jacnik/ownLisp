@@ -3,11 +3,13 @@ Lisp interpreter project build from scratch in C <br />
 
 ## Notes to self:
 
-* compiling with linkes to a file in a ./external directory: <br />
+* compiling with links to a file in a ./external directory: <br />
+ ```console
 cc -std=c99 -Wall prompt.c ./external/mpc.c -ledit -lm -o parsing   
-- -lm -> link to the maths library
-- -ledit -> link to the editline library
-- ./external/mpc.c -> link to the mpc.c file in the ./external directory
+```
+ -lm -> link to the maths library
+ -ledit -> link to the editline library
+ ./external/mpc.c -> link to the mpc.c file in the ./external directory
 
 * compiling a c file with cc and C99 standard:<br />
 cc -std=c99 -Wall prompt.c -o prompt
