@@ -19,8 +19,9 @@ int main(int argc, char** argv) {
   mpca_lang(MPCA_LANG_DEFAULT,
     "                                                   \
       number  : /-?[0-9]+/ ;                            \
-      operator: '+' | '-' | '*' | '/'                   \
-      		| \"add\" | \"sub\" | \"mul\" | \"div\";\
+      operator: '+' | '-' | '*' | '/' | '%'             \
+      		| \"add\" | \"sub\" | \"mul\"           \
+		| \"div\" | \"mod\" ;                   \
       expr    : <number> | '(' <operator> <expr>+ ')' ; \
       lispy   : /^/ <operator> <expr>+ /$/ ;            \
     ",
