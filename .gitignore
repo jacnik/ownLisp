@@ -15,3 +15,10 @@
 # markdown files
 !*.md
 
+# header files
+!*.h
+
+
+# ignore everything in the ./external folder
+/external
+
