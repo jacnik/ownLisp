@@ -79,9 +79,8 @@ int main(int argc, char** argv)
   mpca_lang(MPCA_LANG_DEFAULT,
     "                                                   \
       number  : /-?[0-9]+/ ;                            \
-      operator: '+' | '-' | '*' | '/' | '%'             \
-      		| \"add\" | \"sub\" | \"mul\"           \
-		| \"div\" | \"mod\" ;                   \
+      operator: '+' | '-' | '*' | '/' | '%' | '^'       \
+      		| \"min\" | \"max\" ;                   \ 
       expr    : <number> | '(' <operator> <expr>+ ')' ; \
       lispy   : /^/ <operator> <expr>+ /$/ ;            \
     ",
@@ -104,7 +103,7 @@ int main(int argc, char** argv)
     mpc_result_t r;
     if (mpc_parse("<stdin>", input, Lispy, &r )) 
     {
-	test(r.output); // todo remove
+	//test(r.output); // todo remove
 
       /* If parsed correctly evaluate and print */
       long result = eval(r.output);
