@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
   /* Define parsers with the following lanuage */
   mpca_lang(MPCA_LANG_DEFAULT,
     "                                                   \
-      number  : /-?[0-9]+/ ;                            \
+      number  : /-?[0-9]+[.1-9]*/ ;                     \
       operator: '+' | '-' | '*' | '/' | '%'             \
       		| \"add\" | \"sub\" | \"mul\"           \
 		| \"div\" | \"mod\" ;                   \
