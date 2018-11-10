@@ -5,7 +5,7 @@ Lisp interpreter project build from scratch in C <br />
 
 * compiling with links to a file in a ./external directory: <br />
 ```console
-cc -std=c99 -Wall prompt.c ./external/mpc.c -ledit -lm -o parsing   
+cc -std=c99 -Wall lispy.c ./external/mpc.c -ledit -lm -o lispy 
 ```
 -lm -> link to the maths library  
 -ledit -> link to the editline library  
